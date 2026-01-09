@@ -31,22 +31,4 @@ The system operates on a 100ms closed-loop cycle:
     * *Fault Detected:* If Predicted Voltage < 11.0V (or Load < 20Ω), the system flags a **Critical Fault**.
 4.  **Actuation:** Python triggers the **Automatic Transfer Switch (ATS)** in Simulink to disconnect the Main Supply and engage the Backup Generator.
 
-## 📂 Repository Structure
-```text
-Smart-Grid-Fault-Detection/
-│
-├── 📂 assets/                # Demo screenshots and diagrams
-│   ├── dashboard_ui.png
-│   └── simulink_circuit.png
-│
-├── 📂 src/                   # Source Code
-│   ├── grid_controller.py    # Main Python Dashboard (Tkinter)
-│   ├── train_model.py        # ML Training Script
-│   └── debug_link.py         # Connection diagnostics tool
-│
-├── 📂 simulation/            # Physics Models
-│   ├── Grid_Model.slx        # Simulink Circuit (Simscape)
-│   └── ai_model.pkl          # Trained ML Brain
-│
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project Documentation
+
